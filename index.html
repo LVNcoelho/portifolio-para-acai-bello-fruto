@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta TI - Pâmela | Finanças 4.0</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .card-glass {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(229, 231, 235, 0.8);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-glass:hover { 
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border-color: #7c3aed;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #4338ca 100%);
+        }
+        .status-badge {
+            background: #f5f3ff;
+            color: #7c3aed;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border: 1px solid #ddd6fe;
+        }
+        .accent-text {
+            color: #818cf8;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Header / Navbar Simulado -->
+    <header class="gradient-bg text-white py-16 px-6 text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="0.5"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)" />
+            </svg>
+        </div>
+        <div class="relative z-10">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">Conecta <span class="accent-text">TI</span></h1>
+            <p class="text-lg md:text-xl opacity-80 max-w-2xl mx-auto font-light">
+                Transformação Digital no Financeiro: Inteligência Artificial a serviço da sua empresa.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 -mt-10 pb-24">
+        
+        <!-- Perfil de Especialista -->
+        <div class="bg-white rounded-2xl shadow-xl p-8 mb-12 flex flex-col md:flex-row items-center gap-8 border border-slate-100">
+            <div class="relative">
+                <div class="w-28 h-28 bg-gradient-to-tr from-indigo-600 to-purple-500 rounded-2xl flex items-center justify-center text-white text-5xl shadow-lg transform -rotate-3">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+            </div>
+            <div class="text-center md:text-left flex-1">
+                <div class="flex flex-col md:flex-row md:items-center gap-2 mb-2">
+                    <h2 class="text-3xl font-bold text-slate-900">Pâmela</h2>
+                    <span class="text-indigo-600 font-semibold bg-indigo-50 px-3 py-1 rounded-md text-sm w-fit mx-auto md:mx-0">Fundadora Conecta TI</span>
+                </div>
+                <p class="text-slate-600 leading-relaxed mb-4">Especialista em automação de processos financeiros, focada em substituir tarefas repetitivas por fluxos inteligentes e resultados mensuráveis.</p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-5 text-sm font-medium text-slate-500">
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-house-laptop text-indigo-500"></i> Operação 100% Remota</span>
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-bolt text-amber-500"></i> Eficiência Digital</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Soluções -->
+        <div class="mb-8 flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <div>
+                <h3 class="text-2xl font-bold text-slate-900">Plano de Soluções Digitais</h3>
+                <p class="text-slate-500">Proposta exclusiva para a operação da <span class="font-semibold text-slate-700">Açaí Bello Fruto</span></p>
+            </div>
+            <div class="h-1 w-20 bg-indigo-500 rounded-full hidden md:block"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            
+            <!-- Solução 1 -->
+            <div class="card-glass p-8 rounded-2xl shadow-sm border-t-4 border-t-indigo-500">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="p-3 bg-indigo-50 rounded-xl text-indigo-600">
+                        <i class="fa-solid fa-brain text-2xl"></i>
+                    </div>
+                    <span class="status-badge">IA & Algoritmos</span>
+                </div>
+                <h4 class="font-bold text-xl mb-3 text-slate-800">Conciliação Bancária Inteligente</h4>
+                <p class="text-slate-600 text-sm mb-6 leading-relaxed">Substituição da conferência manual por leitura de dados via IA, identificando divergências em segundos.</p>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                    <p class="text-xs font-bold text-indigo-600 uppercase mb-1">Impacto na Bello Fruto</p>
+                    <p class="text-sm font-medium text-slate-700 italic">"Saldo bancário e operacional sempre em sincronia, com erro humano zero."</p>
+                </div>
+            </div>
+
+            <!-- Solução 2 -->
+            <div class="card-glass p-8 rounded-2xl shadow-sm border-t-4 border-t-purple-500">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="p-3 bg-purple-50 rounded-xl text-purple-600">
+                        <i class="fa-solid fa-comments-dollar text-2xl"></i>
+                    </div>
+                    <span class="status-badge">Automação</span>
+                </div>
+                <h4 class="font-bold text-xl mb-3 text-slate-800">Régua de Cobrança Preditiva</h4>
+                <p class="text-slate-600 text-sm mb-6 leading-relaxed">Assistentes virtuais que gerenciam lembretes de pagamento de forma humanizada e automatizada.</p>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                    <p class="text-xs font-bold text-purple-600 uppercase mb-1">Impacto na Bello Fruto</p>
+                    <p class="text-sm font-medium text-slate-700 italic">"Redução drástica da inadimplência e faturamento sempre pontual."</p>
+                </div>
+            </div>
+
+            <!-- Solução 3 -->
+            <div class="card-glass p-8 rounded-2xl shadow-sm border-t-4 border-t-cyan-500">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="p-3 bg-cyan-50 rounded-xl text-cyan-600">
+                        <i class="fa-solid fa-magnifying-glass-chart text-2xl"></i>
+                    </div>
+                    <span class="status-badge">Analytics</span>
+                </div>
+                <h4 class="font-bold text-xl mb-3 text-slate-800">Fluxo de Caixa Preditivo</h4>
+                <p class="text-slate-600 text-sm mb-6 leading-relaxed">Uso de modelos estatísticos para prever a saúde financeira dos próximos meses.</p>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                    <p class="text-xs font-bold text-cyan-600 uppercase mb-1">Impacto na Bello Fruto</p>
+                    <p class="text-sm font-medium text-slate-700 italic">"Antecipação de cenários para decisões de compra e investimento seguras."</p>
+                </div>
+            </div>
+
+            <!-- Solução 4 -->
+            <div class="card-glass p-8 rounded-2xl shadow-sm border-t-4 border-t-emerald-500">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="p-3 bg-emerald-50 rounded-xl text-emerald-600">
+                        <i class="fa-solid fa-box-archive text-2xl"></i>
+                    </div>
+                    <span class="status-badge">GED Digital</span>
+                </div>
+                <h4 class="font-bold text-xl mb-3 text-slate-800">Arquivamento OCR & Nuvem</h4>
+                <p class="text-slate-600 text-sm mb-6 leading-relaxed">Extração automática de dados de documentos físicos para o sistema digital.</p>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                    <p class="text-xs font-bold text-emerald-600 uppercase mb-1">Impacto na Bello Fruto</p>
+                    <p class="text-sm font-medium text-slate-700 italic">"Acesso instantâneo a qualquer documento, sem pilhas de papel no escritório."</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Call to Action -->
+        <div class="mt-20 relative">
+            <div class="absolute inset-0 bg-indigo-600 rounded-3xl transform rotate-1 opacity-10"></div>
+            <div class="relative bg-white border border-slate-200 p-10 rounded-3xl shadow-xl text-center">
+                <h4 class="text-2xl font-bold mb-4 text-slate-900">Pronta para conectar o financeiro à tecnologia?</h4>
+                <p class="text-slate-500 mb-8 max-w-xl mx-auto italic">"Trabalhar remotamente não é sobre estar longe, é sobre estar presente onde os dados importam."</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <button onclick="copyEmail()" id="btnEmail" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-10 rounded-2xl shadow-lg transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-envelope"></i> Falar com Pâmela
+                    </button>
+                    <a href="#" class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold py-4 px-10 rounded-2xl transition-all flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="py-10 text-center text-slate-400 text-sm">
+        <p>&copy; 2026 Conecta TI | Soluções Inteligentes por Pâmela</p>
+    </footer>
+
+    <script>
+        function copyEmail() {
+            const email = "pamela@conectati.com"; // Substitua pelo seu email real
+            const dummy = document.createElement("textarea");
+            document.body.appendChild(dummy);
+            dummy.value = email;
+            dummy.select();
+            document.execCommand("copy");
+            document.body.removeChild(dummy);
+            
+            const btn = document.getElementById('btnEmail');
+            const originalHtml = btn.innerHTML;
+            btn.innerHTML = "<i class='fa-solid fa-check'></i> E-mail Copiado!";
+            btn.classList.replace('bg-indigo-600', 'bg-emerald-600');
+            
+            setTimeout(() => {
+                btn.innerHTML = originalHtml;
+                btn.classList.replace('bg-emerald-600', 'bg-indigo-600');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
